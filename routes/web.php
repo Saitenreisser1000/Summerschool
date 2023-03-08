@@ -12,10 +12,14 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
+Route::get('/lessontable', function () {
     return view('lessontable');
 });
+
+Route::get('/', function () {
+    return view('overview');
+});
+
 
 Auth::routes();
 

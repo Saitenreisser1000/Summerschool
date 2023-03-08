@@ -20,7 +20,7 @@
                     <tr v-for="i in 4" :key="i">
                         <td v-for="day in daysEarly" :key="day.day">
                             <div>
-                                <v-btn width="210" :rounded="0" :class="getClass(day, i)" @click="onClick(day, i)" :color=getLesson(getLid(day,i)).btncolor>
+                                <v-btn width="210" :rounded="0" :class="getClass(day, i)" @click="onClick(day, i)">
                                     {{ getLesson(getLid(day, i)).lessonname }}
                                 </v-btn>
                             </div>
@@ -34,7 +34,7 @@
                     <tr v-for="i in 4" :key="i">
                         <td v-for="day in daysLate" :key="day.day">
                             <div>
-                                <v-btn width="210" :rounded="0" :class="getClass(day, i)" @click="onClick(day, i)" :color=getLesson(getLid(day,i)).btncolor>
+                                <v-btn width="210" :rounded="0" :class="getClass(day, i)" @click="onClick(day, i)">
                                     {{ getLesson(getLid(day, i)).lessonname }}
                                 </v-btn>
                             </div>
