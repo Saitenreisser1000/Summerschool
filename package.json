@@ -5,6 +5,7 @@
     "dev": "vite"
   },
   "dependencies": {
+    "vee-validate": "^4.7.4",
     "vuetify": "^3.1.5",
     "vuex": "^4.0.2"
   },

@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <lesson-component></lesson-component>
+<v-container style="display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;">
     <v-btn onclick="location.href='{{ url('lessontable') }}'">Zur Anmeldung</v-btn>
-</div>
+    <lesson-component></lesson-component>
+</v-container>
 @endsection

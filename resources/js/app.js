@@ -26,15 +26,13 @@ const vuetify = createVuetify({
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
 import LessontableComponent from './components/Lessontable/LessontableComponent.vue'
 import LessonComponent from './components/Lessontable/LessonComponent.vue'
-import AutomatedComponent from './components/Lessontable/AutomatedComponent.vue'
+import FormularComponent from './components/FormularComponent.vue'
 
-app.component('example-component', ExampleComponent);
 app.component('lessontable-component', LessontableComponent);
 app.component('lesson-component', LessonComponent);
-app.component('automated-component', AutomatedComponent);
+app.component('formular-component', FormularComponent);
 
 
 /**
